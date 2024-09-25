@@ -1,0 +1,4 @@
+﻿  Exercise 2 - Vectors.cpp
+C:\Users\patri\Documents\GitHub\1T2425-BP2_XTIE1-Geralde_PatrickJames\Exercises\EX2\Exercise 2 - Vectors\Exercise 2 - Vectors.cpp(48,26): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\patri\Documents\GitHub\1T2425-BP2_XTIE1-Geralde_PatrickJames\Exercises\EX2\Exercise 2 - Vectors\Exercise 2 - Vectors.cpp(72,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Exercise 2 - Vectors.vcxproj -> C:\Users\patri\Documents\GitHub\1T2425-BP2_XTIE1-Geralde_PatrickJames\Exercises\EX2\Exercise 2 - Vectors\x64\Debug\Exercise 2 - Vectors.exe
