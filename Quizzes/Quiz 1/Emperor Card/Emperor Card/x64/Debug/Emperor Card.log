@@ -1,0 +1,3 @@
+﻿  Emperor Card.cpp
+C:\Users\patri\Documents\GitHub\1T2425-BP2_XTIE1-Geralde_PatrickJames\Quizzes\Quiz 1\Emperor Card\Emperor Card.cpp(121,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Emperor Card.vcxproj -> C:\Users\patri\Documents\GitHub\1T2425-BP2_XTIE1-Geralde_PatrickJames\Quizzes\Quiz 1\Emperor Card\x64\Debug\Emperor Card.exe
