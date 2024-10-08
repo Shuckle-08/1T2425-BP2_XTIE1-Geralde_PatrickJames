@@ -1,0 +1,3 @@
+﻿  Loot.cpp
+C:\Users\patri\Documents\GitHub\1T2425-BP2_XTIE1-Geralde_PatrickJames\Exercises\EX3\Loot\Loot.cpp(122,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Loot.vcxproj -> C:\Users\patri\Documents\GitHub\1T2425-BP2_XTIE1-Geralde_PatrickJames\Exercises\EX3\Loot\x64\Debug\Loot.exe

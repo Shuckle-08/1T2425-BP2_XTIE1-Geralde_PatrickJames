@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Exercises\\EX3\\Loot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{07D679C1-ED02-4EA2-944A-526E66F14673}|Loot.vcxproj|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Exercises\\EX3\\Loot\\Loot.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{07D679C1-ED02-4EA2-944A-526E66F14673}|Loot.vcxproj|solutionrelative:Loot.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Loot.cpp",
+              "DocumentMoniker": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Exercises\\EX3\\Loot\\Loot.cpp",
+              "RelativeDocumentMoniker": "Loot.cpp",
+              "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Exercises\\EX3\\Loot\\Loot.cpp",
+              "RelativeToolTip": "Loot.cpp",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-08T09:16:37.655Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
