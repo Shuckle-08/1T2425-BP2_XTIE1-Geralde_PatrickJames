@@ -1,0 +1,3 @@
+﻿  The Wall.cpp
+C:\Users\patri\Documents\GitHub\1T2425-BP2_XTIE1-Geralde_PatrickJames\Quizzes\Quiz2\The Wall\The Wall.cpp(83,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  The Wall.vcxproj -> C:\Users\patri\Documents\GitHub\1T2425-BP2_XTIE1-Geralde_PatrickJames\Quizzes\Quiz2\The Wall\x64\Debug\The Wall.exe
