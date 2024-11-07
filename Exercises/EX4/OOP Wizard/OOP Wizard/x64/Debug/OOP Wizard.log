@@ -1,0 +1,6 @@
+﻿  OOP Wizard.cpp
+C:\Users\patri\Documents\GitHub\1T2425-BP2_XTIE1-Geralde_PatrickJames\Exercises\EX4\OOP Wizard\OOP Wizard.cpp(31,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  spell.cpp
+  wizard.cpp
+  Generating Code...
+  OOP Wizard.vcxproj -> C:\Users\patri\Documents\GitHub\1T2425-BP2_XTIE1-Geralde_PatrickJames\Exercises\EX4\OOP Wizard\x64\Debug\OOP Wizard.exe
