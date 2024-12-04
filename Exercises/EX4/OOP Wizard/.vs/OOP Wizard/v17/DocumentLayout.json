@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "OOP Wizard.cpp",
               "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Exercises\\EX4\\OOP Wizard\\OOP Wizard.cpp",
               "RelativeToolTip": "OOP Wizard.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-05T12:21:29.49Z",
               "EditorCaption": ""
@@ -59,8 +59,7 @@
               "RelativeToolTip": "wizard.cpp",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-05T12:23:01.576Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T12:23:01.576Z"
             },
             {
               "$type": "Document",
@@ -96,8 +95,7 @@
               "RelativeToolTip": "spell.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-05T12:30:37.744Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T12:30:37.744Z"
             }
           ]
         }
