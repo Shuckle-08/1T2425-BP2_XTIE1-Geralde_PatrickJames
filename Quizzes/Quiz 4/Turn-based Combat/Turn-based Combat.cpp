@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <Windows.h>
 
 #include "unit.h"
 #include "action.h"
@@ -15,9 +16,9 @@
 
 using namespace std;
 
-void displayDetails(std::vector<unit>& allies, std::vector<unit>& enemies, std::vector<unit>& turnOrder)
+void displayDetails(vector<unit>& allies, vector<unit>& enemies, vector<unit>& turnOrder)
 {
-	system("clr");
+	system("cls");
 	cout << "Team Warcraft :" << "\n\n";
 	for (int i = 0; i < allies.size(); i++) {
 		allies[i].displayStats();
@@ -40,15 +41,7 @@ void displayDetails(std::vector<unit>& allies, std::vector<unit>& enemies, std::
 
 int main()
 {
-	//vector<action> actions = {
-	//	basicAttack("Bash"),
-	//	skillMulti("Face Melt"),
-	//	skillSingle("The Hunt"),
-	//	skillHeal("The Jug of Life"),
-	//	skillSingle("Puncturing Arrow"),
-	//	skillHeal("Divine Palm")
-	//}
-
+	// Actions
 	action* attack = new basicAttack("Bash");
 	action* faceMelt = new skillMulti("Face Melt");
 	action* theHunt = new skillSingle("The Hunt");
@@ -56,25 +49,25 @@ int main()
 	action* puncturingArrow = new skillSingle("Puncturing Arrow");
 	action* divinePalm = new skillHeal("Divine Palm");
 
-	//Make Allies
+	// Allies
 	vector<unit> allies = {
-		unit("E.T.C" , attack, faceMelt),
-		unit("Illidan", attack, theHunt),
-		unit("LiLi", attack, jugOfLife)
+		unit("E.T.C" , attack, faceMelt, true),
+		unit("Illidan", attack, theHunt, true),
+		unit("LiLi", attack, jugOfLife, true)
 	};
 
-	//Make Enemies
+	// Enemies
 	vector<unit> enemies = {
-		unit("Johanna", attack, faceMelt),
-		unit("Valla", attack, puncturingArrow),
-		unit("Kharazim", attack, divinePalm)
+		unit("Johanna", attack, faceMelt, false),
+		unit("Valla", attack, puncturingArrow, false),
+		unit("Kharazim", attack, divinePalm, false)
 	};
 
 	//Determine Turn Order
 	vector<unit> turnOrder = allies;
 	turnOrder.insert(turnOrder.end(), enemies.begin(), enemies.end());
 
-	std::sort(turnOrder.begin(), turnOrder.end(), [](const unit& a, const unit& b) {
+	sort(turnOrder.begin(), turnOrder.end(), [](const unit& a, const unit& b) {
 		return a.getAgi() > b.getAgi();
 		});
 	
@@ -82,7 +75,55 @@ int main()
 	//Display Details
 	displayDetails(allies, enemies, turnOrder);
 
-	
+	cout << "\n";
+
+	srand(time(0));
+	int randomTarget = rand() % 3;
+	int actionSelection;
+
+	//One Turn
+	for (int i = 0; i < turnOrder.size(); i++) {
+		cout << "It is " << turnOrder[i].getName() << " turn" << "\n\n";
+		if (turnOrder[i].getAlliance() == false) {
+			cout << "Enemy is Deciding" << "\n";
+			Sleep(500);
+
+			if (turnOrder[i].getCurrentMp() < turnOrder[i].getSpellMpCost()) {
+				cout << "Enemy is Attacking" << "\n";
+				//turnOrder[i].doAttack(turnOrder[i], allies[randomTarget])
+			}
+			else {
+				cout << "Enemy is Casting Spell" << "\n";
+				//turnOrder[i].castSpell(turnOrder[i], enemies[randomTarget]);
+			}
+		}
+		else {
+			turnOrder[i].displayActions();
+			//system("pause");
+			while (true) {
+				cin >> actionSelection;
+				switch (actionSelection) {
+				case 1:
+					cout << "Attacking" << "\n";
+					//turnOrder[i].doAttack(turnOrder[i], enemies[randomTarget]);
+					actionSelection = 0;
+					break;
+				case 2:
+					cout << "Casting Spell"<< "\n";
+					//turnOrder[i].castSpell(turnOrder[i], enemies[randomTarget]);
+					actionSelection = 0;
+					break;
+				default:
+					cout << "Invalid Input" << "\n";
+					continue;
+				}
+				if (actionSelection == 0) {
+					break;
+				}
+			}
+			
+		}
+	}
 
 	cout << "Huhays" << "\n\n";
 	system("pause");

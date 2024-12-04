@@ -10,10 +10,12 @@ basicAttack::basicAttack(string attackName)
 	//cout << "Made Basic Attack Called " << this->actionName << " with an MP cost of " << this->mpCost << "\n\n";
 }
 
-void basicAttack::doBasicAttack(unit* attacker, unit* defender)
+void basicAttack::performAction(unit* attacker, unit* defender)
 {
 	srand(time(0));
-	int damage, baseDamage, randomizedPow, hitPercent;
+	
+	//Damage Calculation
+	int damage, baseDamage, randomizedPow;
 
 	randomizedPow = attacker->getPow() + (attacker->getPow() % 20);
 
@@ -25,6 +27,18 @@ void basicAttack::doBasicAttack(unit* attacker, unit* defender)
 		damage = 1;
 	}
 
+	//Crit Calculation
+	int critRate = 20;
+	int critDamageMultiplier = 1.2;
+	int critRoll = rand() % 100;
+
+	if (critRoll < critRate) {
+		cout << this->actionName << " has CRIT !!!" << "\n";
+		damage *= critDamageMultiplier;
+	}
+
+	//Hit Calculation
+	int  hitPercent;
 	hitPercent = attacker->getDex() / defender->getAgi();
 
 	if (hitPercent < 20) {
@@ -40,5 +54,4 @@ void basicAttack::doBasicAttack(unit* attacker, unit* defender)
 		cout << attacker->getName() << " succesfully used " << this->getActionName() << " at " << defender->getName() << "\n";
 		defender->takeDamage(damage);
 	}
-
 }

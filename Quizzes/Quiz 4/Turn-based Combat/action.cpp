@@ -17,3 +17,9 @@ int action::getMpCost()
 {
     return this->mpCost;
 }
+
+void action::performAction(unit* attacker, unit* defender)
+{
+    cout << "Executing Blank Action" << "\n";
+    
+}

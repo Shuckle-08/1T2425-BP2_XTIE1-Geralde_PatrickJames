@@ -29,11 +29,12 @@ void unit::randomizeStats()
 	this->currentMp = this->maxMp;
 }
 
-unit::unit(string nameInput, action* attackName, action* spellName)
+unit::unit(string nameInput, action* attackName, action* spellName, bool isAlly)
 {
 	this->name = nameInput;
 	this->attack = attackName;
 	this->spell = spellName;
+	this->isAlly = isAlly;
 	
 
 	randomizeStats();
@@ -91,11 +92,42 @@ int unit::getDex()
 	return this->dex;
 }
 
+bool unit::getAlliance()
+{
+	return this->isAlly;
+}
+
+int unit::getSpellMpCost()
+{
+	return this->spell->getMpCost();
+}
+
 void unit::displayStats()
 {
 	int space = 5;
 	cout << right;
-	cout << this->name << setw(space) << " HP " << " : " << this->currentHp << setw(space) << " MP " << " : " << this->currentMp << "\n\n";
+	cout << this->name << setw(space) << " HP " << " : " << this->currentHp << setw(space) << " MP " << " : " << this->currentMp << "\n";
+}
+
+void unit::displayActions()
+{
+	int space = 5;
+	cout << setw(space) << " [1] " << this->attack->getActionName() << setw(space) << "[MP:" << this->attack->getMpCost() << "]" << "\n";
+	cout << setw(space) << " [2] " << this->spell->getActionName() << setw(space) << "[MP:" << this->spell->getMpCost() << "]" << "\n";
+}
+
+void unit::doAttack(unit* attacker, unit* defender)
+{
+	cout << this->name << " has attacked !!!" << "\n";
+
+	this->attack->performAction(attacker, defender);
+}
+
+void unit::castSpell(unit* attacker, unit* defender)
+{
+	cout << this->name << " has cast his spell !!!" << "\n";
+	this->currentMp -= this->spell->getMpCost();
+	this->spell->performAction(attacker, defender);
 }
 
 void unit::takeDamage(int damageDealt)
@@ -103,3 +135,10 @@ void unit::takeDamage(int damageDealt)
 	cout << this->name << " has taken " << damageDealt << " damage !!!" << "\n\n";
 	this->currentHp -= damageDealt;
 }
+
+void unit::healHp(int healAmount)
+{
+	cout << this->name << " has healed " << healAmount << " HP !!!" << "\n\n";
+	this->currentHp += healAmount;
+}
+

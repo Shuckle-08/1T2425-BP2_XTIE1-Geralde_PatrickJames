@@ -18,11 +18,11 @@ private:
 	int dex;
 	action* attack;
 	action* spell;
-	//int spellType;
+	bool isAlly;
 	void randomizeStats();
 
 public:
-	unit(string nameInput, action* attackName , action* spellName);
+	unit(string nameInput, action* attackName , action* spellName, bool isAlly);
 	~unit();
 
 	string getName() const;
@@ -34,8 +34,15 @@ public:
 	int getVit();
 	int getAgi() const;
 	int getDex();
+	bool getAlliance();
+	int getSpellMpCost();
 
 	void displayStats();
+	void displayActions();
+
+	void doAttack(unit* attacker, unit* defender);
+	void castSpell(unit* attacker, unit* defender);
 	void takeDamage(int damageDealt);
+	void healHp(int healAmount);
 };
 

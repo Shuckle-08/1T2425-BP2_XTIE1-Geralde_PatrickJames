@@ -1,9 +1,11 @@
 #include <iostream>
+
 using namespace std;
 
 
 
 #pragma once
+class unit;
 class action
 {
 protected:
@@ -16,6 +18,8 @@ public:
 	action(); //constructor
 	string getActionName();
 	int getMpCost();
+
+	virtual void performAction(unit* attacker, unit* defender) = 0;
 
 };
 
