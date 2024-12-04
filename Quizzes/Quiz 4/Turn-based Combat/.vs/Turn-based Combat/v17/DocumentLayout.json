@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\Turn-based Combat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|solutionrelative:Turn-based Combat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\unit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|solutionrelative:unit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -11,24 +15,44 @@
       "RelativeMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|solutionrelative:unit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\Turn-based Combat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|solutionrelative:Turn-based Combat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\action.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|solutionrelative:action.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\skillHeal.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|solutionrelative:skillHeal.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\skillSingle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|solutionrelative:skillSingle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\skillMulti.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|solutionrelative:skillMulti.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\basicAttack.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|solutionrelative:basicAttack.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\basicAttack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|solutionrelative:basicAttack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\action.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|solutionrelative:action.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\action.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|solutionrelative:action.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\basicAttack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|solutionrelative:basicAttack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\skillHeal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|solutionrelative:skillHeal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\skillSingle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|solutionrelative:skillSingle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\skillMulti.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{043FD48F-EEB1-425F-B5C8-E6A000ED7F3A}|Turn-based Combat.vcxproj|solutionrelative:skillMulti.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,52 +70,127 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "skillHeal.cpp",
+              "DocumentMoniker": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\skillHeal.cpp",
+              "RelativeDocumentMoniker": "skillHeal.cpp",
+              "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\skillHeal.cpp",
+              "RelativeToolTip": "skillHeal.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-02T17:21:55.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "skillHeal.h",
+              "DocumentMoniker": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\skillHeal.h",
+              "RelativeDocumentMoniker": "skillHeal.h",
+              "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\skillHeal.h",
+              "RelativeToolTip": "skillHeal.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-02T17:20:20.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "skillSingle.cpp",
+              "DocumentMoniker": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\skillSingle.cpp",
+              "RelativeDocumentMoniker": "skillSingle.cpp",
+              "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\skillSingle.cpp",
+              "RelativeToolTip": "skillSingle.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-02T17:22:15.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "skillSingle.h",
+              "DocumentMoniker": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\skillSingle.h",
+              "RelativeDocumentMoniker": "skillSingle.h",
+              "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\skillSingle.h",
+              "RelativeToolTip": "skillSingle.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-02T17:20:09.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "skillMulti.cpp",
+              "DocumentMoniker": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\skillMulti.cpp",
+              "RelativeDocumentMoniker": "skillMulti.cpp",
+              "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\skillMulti.cpp",
+              "RelativeToolTip": "skillMulti.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-02T17:22:52.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "skillMulti.h",
+              "DocumentMoniker": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\skillMulti.h",
+              "RelativeDocumentMoniker": "skillMulti.h",
+              "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\skillMulti.h",
+              "RelativeToolTip": "skillMulti.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-02T17:20:01.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "basicAttack.cpp",
               "DocumentMoniker": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\basicAttack.cpp",
               "RelativeDocumentMoniker": "basicAttack.cpp",
               "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\basicAttack.cpp",
               "RelativeToolTip": "basicAttack.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-29T23:23:22.65Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "basicAttack.h",
               "DocumentMoniker": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\basicAttack.h",
               "RelativeDocumentMoniker": "basicAttack.h",
               "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\basicAttack.h",
               "RelativeToolTip": "basicAttack.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-29T23:21:37.68Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "action.cpp",
               "DocumentMoniker": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\action.cpp",
               "RelativeDocumentMoniker": "action.cpp",
               "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\action.cpp",
               "RelativeToolTip": "action.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-29T23:20:45.902Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "action.h",
               "DocumentMoniker": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\action.h",
               "RelativeDocumentMoniker": "action.h",
               "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\action.h",
               "RelativeToolTip": "action.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-29T23:12:03.982Z",
               "EditorCaption": ""
@@ -99,25 +198,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "unit.h",
-              "DocumentMoniker": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\unit.h",
-              "RelativeDocumentMoniker": "unit.h",
-              "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\unit.h",
-              "RelativeToolTip": "unit.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-29T22:33:13.287Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "unit.cpp",
               "DocumentMoniker": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\unit.cpp",
               "RelativeDocumentMoniker": "unit.cpp",
               "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\unit.cpp",
               "RelativeToolTip": "unit.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADAAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-29T22:33:57.36Z",
               "EditorCaption": ""
@@ -125,12 +211,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "unit.h",
+              "DocumentMoniker": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\unit.h",
+              "RelativeDocumentMoniker": "unit.h",
+              "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\unit.h",
+              "RelativeToolTip": "unit.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-29T22:33:13.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Turn-based Combat.cpp",
               "DocumentMoniker": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\Turn-based Combat.cpp",
               "RelativeDocumentMoniker": "Turn-based Combat.cpp",
               "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 4\\Turn-based Combat\\Turn-based Combat.cpp",
               "RelativeToolTip": "Turn-based Combat.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-29T22:32:01.603Z",
               "EditorCaption": ""

@@ -2,6 +2,14 @@
 #include "unit.h"
 
 
+basicAttack::basicAttack(string attackName)
+{
+	this->actionName = attackName;
+	this->damageCoefficient = 1;
+	this->mpCost = 0;
+	//cout << "Made Basic Attack Called " << this->actionName << " with an MP cost of " << this->mpCost << "\n\n";
+}
+
 void basicAttack::doBasicAttack(unit* attacker, unit* defender)
 {
 	srand(time(0));

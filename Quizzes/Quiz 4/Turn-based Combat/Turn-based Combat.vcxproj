@@ -129,12 +129,19 @@
   <ItemGroup>
     <ClCompile Include="action.cpp" />
     <ClCompile Include="basicAttack.cpp" />
+    <ClCompile Include="skillHeal.cpp" />
+    <ClCompile Include="skillMulti.cpp" />
+    <ClCompile Include="skillSingle.cpp" />
     <ClCompile Include="Turn-based Combat.cpp" />
     <ClCompile Include="unit.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="action.h" />
     <ClInclude Include="basicAttack.h" />
+    <ClInclude Include="skillHeal.h" />
+    <ClInclude Include="skillMulti.h" />
+    <ClInclude Include="skillSingle.h" />
+    <ClInclude Include="Turn-based Combat.h" />
     <ClInclude Include="unit.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

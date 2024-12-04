@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 #pragma once
@@ -17,22 +18,24 @@ private:
 	int dex;
 	action* attack;
 	action* spell;
+	//int spellType;
 	void randomizeStats();
 
 public:
-	unit(string nameInput, action* (string attackName, int actionType) , action* (string spellName, int actionType));
+	unit(string nameInput, action* attackName , action* spellName);
 	~unit();
 
-	string getName();
+	string getName() const;
 	int getMaxHp();
 	int getCurrentHp();
 	int getMaxMp();
 	int getCurrentMp();
 	int getPow();
 	int getVit();
-	int getAgi();
+	int getAgi() const;
 	int getDex();
 
+	void displayStats();
 	void takeDamage(int damageDealt);
 };
 

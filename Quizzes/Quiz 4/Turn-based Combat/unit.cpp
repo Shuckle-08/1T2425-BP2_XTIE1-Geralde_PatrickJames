@@ -1,24 +1,40 @@
 #include "unit.h"
+#include "action.h"
+#include "skillHeal.h"
+#include "skillMulti.h"
+#include "skillSingle.h"
+#include "basicAttack.h"
 #include <iostream>
+#include <random>
+#include <iomanip>
+#include <Windows.h>
+
 using namespace std;
 
 
 void unit::randomizeStats()
 {
-	srand(time(0));
+	Sleep(1000);
+	default_random_engine randomizer;
+	randomizer.seed(time(0));
+	uniform_int_distribution<int> range(10, 20);
 
 	this->maxHp = 100;
-	this->pow = 1 + (rand() % 10);
-	this->vit = 1 + (rand() % 10);
-	this->agi = 1 + (rand() % 10);
-	this->dex = 1 + (rand() % 10);
+	this->currentHp = this->maxHp;
+	this->pow = range(randomizer); cout << "pow " << this->pow << "\n";
+	this->vit = range(randomizer); cout << "vit " << this->vit << "\n";
+	this->agi = range(randomizer); cout << "agi " << this->agi << "\n";
+	this->dex = range(randomizer); cout << "dex " << this->dex << "\n";
+	this->maxMp = 50;
+	this->currentMp = this->maxMp;
 }
 
-unit::unit(string nameInput, action* (string attackName, int actionType), action* (string spellName, int actionType))
+unit::unit(string nameInput, action* attackName, action* spellName)
 {
 	this->name = nameInput;
-	this->attack = ;
-	this->spell = spell;
+	this->attack = attackName;
+	this->spell = spellName;
+	
 
 	randomizeStats();
 
@@ -27,10 +43,10 @@ unit::unit(string nameInput, action* (string attackName, int actionType), action
 
 unit::~unit()
 {
-	cout << this->name << " has died !!!" << "\n\n";
+	//cout << this->name << " has died !!!" << "\n\n";
 }
 
-string unit::getName()
+string unit::getName() const
 {
 	return this->name;
 }
@@ -65,7 +81,7 @@ int unit::getVit()
 	return this->vit;
 }
 
-int unit::getAgi()
+int unit::getAgi() const
 {
 	return this->agi;
 }
@@ -73,6 +89,13 @@ int unit::getAgi()
 int unit::getDex()
 {
 	return this->dex;
+}
+
+void unit::displayStats()
+{
+	int space = 5;
+	cout << right;
+	cout << this->name << setw(space) << " HP " << " : " << this->currentHp << setw(space) << " MP " << " : " << this->currentMp << "\n\n";
 }
 
 void unit::takeDamage(int damageDealt)

@@ -1,28 +1,19 @@
 #include "action.h"
 
-action::action(string actionNameInput, int actionTypeInput) //constructor
+action::action() //constructor
 {
-    this->actionName = actionNameInput;
-    switch (actionTypeInput) {
-    case 1: //basicAttack
-        this->damageCoefficient = 1;
-        break;
-    case 2: //skillMulti
-        this->damageCoefficient = 0.9;
-        break;
-    case 3: //skillSingle
-        this->damageCoefficient = 2.2;
-        break;
-    case 4: //skillHeal
-        this->damageCoefficient = 0;
-        break;
-    default: //
-        this->damageCoefficient = 0;
-        break;
-    }
+    //this->actionName = "actionNameInput";
+    //this->damageCoefficient = 0;
+    //this->mpCost = 0;
+    //cout << "Made a Blank Action" << "\n\n";
 }
 
 string action::getActionName()
 {
     return this->actionName;
+}
+
+int action::getMpCost()
+{
+    return this->mpCost;
 }

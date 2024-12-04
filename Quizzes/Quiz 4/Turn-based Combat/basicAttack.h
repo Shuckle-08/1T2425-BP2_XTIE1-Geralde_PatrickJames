@@ -5,6 +5,7 @@ class basicAttack :
     public action
 {
 public:
+    basicAttack(string attackName);
     void doBasicAttack(unit* attacker, unit* defender);
 };
 

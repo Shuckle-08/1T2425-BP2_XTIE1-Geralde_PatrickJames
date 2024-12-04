@@ -3,35 +3,87 @@
 
 #include <iostream>
 #include <vector>
+#include <algorithm>
+
 #include "unit.h"
 #include "action.h"
+#include "basicAttack.h"
+#include "skillHeal.h"
+#include "skillMulti.h"
+#include "skillSingle.h"
+#include "Turn-based Combat.h"
 
 using namespace std;
 
+void displayDetails(std::vector<unit>& allies, std::vector<unit>& enemies, std::vector<unit>& turnOrder)
+{
+	system("clr");
+	cout << "Team Warcraft :" << "\n\n";
+	for (int i = 0; i < allies.size(); i++) {
+		allies[i].displayStats();
+	}
+
+	cout << "\n\n";
+
+	cout << "Team Diablo :" << "\n\n";
+	for (int i = 0; i < enemies.size(); i++) {
+		enemies[i].displayStats();
+	}
+
+	cout << "\n\n";
+
+	cout << "Turn Order :" << "\n\n";
+	for (const auto& unit : turnOrder) {
+		cout << unit.getName() << " (Agility: " << unit.getAgi() << ")\n";
+	}
+}
 
 int main()
 {
-    // Add Allies
-    vector<unit> allies = {
-        unit("E.T.C" , "Guitar Smash", "Face Melt"),
-        unit("Illidan" , "Blade Whirl" , "The Hunt"),
-        unit("LiLi" , "Face Slap" , "Jug of Life")
-    }
-    // Add Allies
-        vector<Allies> allies = {
-            unit etc("E.T.C" , "Guitar Smash", "Face Melt"),
-            unit illidan("Illidan" , "Blade Whirl" , "The Hunt"),
-            unit lili("LiLi" , "Face Slap"),
-    }
+	//vector<action> actions = {
+	//	basicAttack("Bash"),
+	//	skillMulti("Face Melt"),
+	//	skillSingle("The Hunt"),
+	//	skillHeal("The Jug of Life"),
+	//	skillSingle("Puncturing Arrow"),
+	//	skillHeal("Divine Palm")
+	//}
+
+	action* attack = new basicAttack("Bash");
+	action* faceMelt = new skillMulti("Face Melt");
+	action* theHunt = new skillSingle("The Hunt");
+	action* jugOfLife = new skillHeal("The Jug of Life");
+	action* puncturingArrow = new skillSingle("Puncturing Arrow");
+	action* divinePalm = new skillHeal("Divine Palm");
+
+	//Make Allies
+	vector<unit> allies = {
+		unit("E.T.C" , attack, faceMelt),
+		unit("Illidan", attack, theHunt),
+		unit("LiLi", attack, jugOfLife)
+	};
+
+	//Make Enemies
+	vector<unit> enemies = {
+		unit("Johanna", attack, faceMelt),
+		unit("Valla", attack, puncturingArrow),
+		unit("Kharazim", attack, divinePalm)
+	};
+
+	//Determine Turn Order
+	vector<unit> turnOrder = allies;
+	turnOrder.insert(turnOrder.end(), enemies.begin(), enemies.end());
+
+	std::sort(turnOrder.begin(), turnOrder.end(), [](const unit& a, const unit& b) {
+		return a.getAgi() > b.getAgi();
+		});
+	
+
+	//Display Details
+	displayDetails(allies, enemies, turnOrder);
+
+	
+
+	cout << "Huhays" << "\n\n";
+	system("pause");
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
