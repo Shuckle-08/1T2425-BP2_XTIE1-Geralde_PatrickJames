@@ -3,19 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 3\\Arena\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Exercises\\EX4\\OOP Wizard\\OOP Wizard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{AC2126A9-F0E7-4B3B-AD1E-684F117F62B2}|Arena.vcxproj|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 3\\Arena\\Arena.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AC2126A9-F0E7-4B3B-AD1E-684F117F62B2}|Arena.vcxproj|solutionrelative:Arena.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Exercises\\EX4\\OOP Wizard\\spell.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{AC2126A9-F0E7-4B3B-AD1E-684F117F62B2}|Arena.vcxproj|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 3\\Arena\\fighter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AC2126A9-F0E7-4B3B-AD1E-684F117F62B2}|Arena.vcxproj|solutionrelative:fighter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Exercises\\EX4\\OOP Wizard\\wizard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Exercises\\EX4\\OOP Wizard\\wizard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Exercises\\EX4\\OOP Wizard\\spell.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{AC2126A9-F0E7-4B3B-AD1E-684F117F62B2}|Arena.vcxproj|C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 3\\Arena\\fighter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AC2126A9-F0E7-4B3B-AD1E-684F117F62B2}|Arena.vcxproj|solutionrelative:fighter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,63 +31,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OOP Wizard.cpp",
-              "DocumentMoniker": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Exercises\\EX4\\OOP Wizard\\OOP Wizard.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\Exercises\\EX4\\OOP Wizard\\OOP Wizard.cpp",
-              "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Exercises\\EX4\\OOP Wizard\\OOP Wizard.cpp",
-              "RelativeToolTip": "..\\..\\..\\Exercises\\EX4\\OOP Wizard\\OOP Wizard.cpp",
+              "Title": "Arena.cpp",
+              "DocumentMoniker": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 3\\Arena\\Arena.cpp",
+              "RelativeDocumentMoniker": "Arena.cpp",
+              "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 3\\Arena\\Arena.cpp",
+              "RelativeToolTip": "Arena.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-29T22:43:26.763Z",
+              "WhenOpened": "2024-12-03T14:14:33.156Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "fighter.cpp",
+              "DocumentMoniker": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 3\\Arena\\fighter.cpp",
+              "RelativeDocumentMoniker": "fighter.cpp",
+              "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 3\\Arena\\fighter.cpp",
+              "RelativeToolTip": "fighter.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-03T14:14:34.383Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "wizard.h",
-              "DocumentMoniker": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Exercises\\EX4\\OOP Wizard\\wizard.h",
-              "RelativeDocumentMoniker": "..\\..\\..\\Exercises\\EX4\\OOP Wizard\\wizard.h",
-              "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Exercises\\EX4\\OOP Wizard\\wizard.h",
-              "RelativeToolTip": "..\\..\\..\\Exercises\\EX4\\OOP Wizard\\wizard.h",
+              "Title": "fighter.h",
+              "DocumentMoniker": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 3\\Arena\\fighter.h",
+              "RelativeDocumentMoniker": "fighter.h",
+              "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Quizzes\\Quiz 3\\Arena\\fighter.h",
+              "RelativeToolTip": "fighter.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-29T22:40:35.739Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "wizard.cpp",
-              "DocumentMoniker": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Exercises\\EX4\\OOP Wizard\\wizard.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\Exercises\\EX4\\OOP Wizard\\wizard.cpp",
-              "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Exercises\\EX4\\OOP Wizard\\wizard.cpp",
-              "RelativeToolTip": "..\\..\\..\\Exercises\\EX4\\OOP Wizard\\wizard.cpp",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-29T22:43:26.652Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "spell.h",
-              "DocumentMoniker": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Exercises\\EX4\\OOP Wizard\\spell.h",
-              "RelativeDocumentMoniker": "..\\..\\..\\Exercises\\EX4\\OOP Wizard\\spell.h",
-              "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Exercises\\EX4\\OOP Wizard\\spell.h",
-              "RelativeToolTip": "..\\..\\..\\Exercises\\EX4\\OOP Wizard\\spell.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-29T22:41:05.503Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "spell.cpp",
-              "DocumentMoniker": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Exercises\\EX4\\OOP Wizard\\spell.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\Exercises\\EX4\\OOP Wizard\\spell.cpp",
-              "ToolTip": "C:\\Users\\patri\\Documents\\GitHub\\1T2425-BP2_XTIE1-Geralde_PatrickJames\\Exercises\\EX4\\OOP Wizard\\spell.cpp",
-              "RelativeToolTip": "..\\..\\..\\Exercises\\EX4\\OOP Wizard\\spell.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-29T22:41:04.875Z"
+              "WhenOpened": "2024-12-03T14:14:32.206Z"
             }
           ]
         }

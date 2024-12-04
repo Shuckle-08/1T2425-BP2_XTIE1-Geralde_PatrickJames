@@ -97,6 +97,8 @@ int main()
             delete enemy;
             fighter* enemy = createFighter(rounds);
             }
+
+        system("pause");
     }
 
     delete player;
