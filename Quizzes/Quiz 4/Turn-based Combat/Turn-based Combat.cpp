@@ -56,6 +56,7 @@ int main()
 		unit("LiLi", attack, jugOfLife, true)
 	};
 
+
 	// Enemies
 	vector<unit> enemies = {
 		unit("Johanna", attack, faceMelt, false),
@@ -63,8 +64,10 @@ int main()
 		unit("Kharazim", attack, divinePalm, false)
 	};
 
+
 	//Determine Turn Order
-	vector<unit> turnOrder = allies;
+	vector<unit> turnOrder;
+	turnOrder.insert(turnOrder.end(), allies.begin(), allies.end());
 	turnOrder.insert(turnOrder.end(), enemies.begin(), enemies.end());
 
 	sort(turnOrder.begin(), turnOrder.end(), [](const unit& a, const unit& b) {
@@ -77,24 +80,25 @@ int main()
 
 	cout << "\n";
 
+	//One Turn
 	srand(time(0));
 	int randomTarget = rand() % 3;
 	int actionSelection;
 
-	//One Turn
 	for (int i = 0; i < turnOrder.size(); i++) {
 		cout << "It is " << turnOrder[i].getName() << " turn" << "\n\n";
+
 		if (turnOrder[i].getAlliance() == false) {
 			cout << "Enemy is Deciding" << "\n";
 			Sleep(500);
 
 			if (turnOrder[i].getCurrentMp() < turnOrder[i].getSpellMpCost()) {
 				cout << "Enemy is Attacking" << "\n";
-				//turnOrder[i].doAttack(turnOrder[i], allies[randomTarget])
+				turnOrder[i].doAttack(&turnOrder[i], &allies[randomTarget]);
 			}
 			else {
 				cout << "Enemy is Casting Spell" << "\n";
-				//turnOrder[i].castSpell(turnOrder[i], enemies[randomTarget]);
+				turnOrder[i].castSpell(&turnOrder[i], &enemies[randomTarget]);
 			}
 		}
 		else {
@@ -105,12 +109,12 @@ int main()
 				switch (actionSelection) {
 				case 1:
 					cout << "Attacking" << "\n";
-					//turnOrder[i].doAttack(turnOrder[i], enemies[randomTarget]);
+					turnOrder[i].doAttack(&turnOrder[i], &enemies[randomTarget]);
 					actionSelection = 0;
 					break;
 				case 2:
-					cout << "Casting Spell"<< "\n";
-					//turnOrder[i].castSpell(turnOrder[i], enemies[randomTarget]);
+					cout << "Casting Spell" << "\n";
+					turnOrder[i].castSpell(&turnOrder[i], &enemies[randomTarget]);
 					actionSelection = 0;
 					break;
 				default:
@@ -121,7 +125,6 @@ int main()
 					break;
 				}
 			}
-			
 		}
 	}
 

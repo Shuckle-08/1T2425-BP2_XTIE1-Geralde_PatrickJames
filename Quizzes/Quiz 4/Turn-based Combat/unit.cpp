@@ -26,10 +26,10 @@ void unit::randomizeStats()
 	this->agi = range(randomizer); cout << "agi " << this->agi << "\n";
 	this->dex = range(randomizer); cout << "dex " << this->dex << "\n";
 	this->maxMp = 50;
-	this->currentMp = this->maxMp;
+	this->currentMp = 0;
 }
 
-unit::unit(string nameInput, action* attackName, action* spellName, bool isAlly)
+unit::unit(string nameInput, action* attackName, action* spellName, bool isAlly) //Constructor
 {
 	this->name = nameInput;
 	this->attack = attackName;
