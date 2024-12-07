@@ -53,5 +53,6 @@ void basicAttack::performAction(unit* attacker, unit* defender)
 	if (attackRoll > hitPercent) {
 		cout << attacker->getName() << " succesfully used " << this->getActionName() << " at " << defender->getName() << "\n";
 		defender->takeDamage(damage);
+		attacker->gainMP(3);
 	}
 }

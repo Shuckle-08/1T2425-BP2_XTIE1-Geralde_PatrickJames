@@ -5,6 +5,7 @@
 #include <vector>
 #include <algorithm>
 #include <Windows.h>
+#include <cstdlib>
 
 #include "unit.h"
 #include "action.h"
@@ -14,120 +15,146 @@
 #include "skillSingle.h"
 #include "Turn-based Combat.h"
 
-using namespace std;
-
-void displayDetails(vector<unit>& allies, vector<unit>& enemies, vector<unit>& turnOrder)
-{
-	system("cls");
-	cout << "Team Warcraft :" << "\n\n";
-	for (int i = 0; i < allies.size(); i++) {
-		allies[i].displayStats();
-	}
-
-	cout << "\n\n";
-
-	cout << "Team Diablo :" << "\n\n";
-	for (int i = 0; i < enemies.size(); i++) {
-		enemies[i].displayStats();
-	}
-
-	cout << "\n\n";
-
-	cout << "Turn Order :" << "\n\n";
-	for (const auto& unit : turnOrder) {
-		cout << unit.getName() << " (Agility: " << unit.getAgi() << ")\n";
-	}
+void bubbleSort(vector<unit*>& units) {
+    size_t n = units.size();
+    for (size_t i = 0; i < n - 1; ++i) {
+        for (size_t j = 0; j < n - i - 1; ++j) {
+            if (units[j]->getAgi() > units[j + 1]->getAgi()) {
+                // Swap the units
+                std::swap(units[j], units[j + 1]);
+            }
+        }
+    }
 }
 
-int main()
-{
-	// Actions
-	action* attack = new basicAttack("Bash");
-	action* faceMelt = new skillMulti("Face Melt");
-	action* theHunt = new skillSingle("The Hunt");
-	action* jugOfLife = new skillHeal("The Jug of Life");
-	action* puncturingArrow = new skillSingle("Puncturing Arrow");
-	action* divinePalm = new skillHeal("Divine Palm");
+void displayDetails(vector<unit*>& warcraft, vector<unit*>& diablo, vector<unit*>& turnOrder) {
+    system("cls");
+    cout << "Team Warcraft :" << "\n\n";
+    for (int i = 0; i < warcraft.size(); i++) {
+        warcraft[i]->displayStats();
+    }
 
-	// Allies
-	vector<unit> allies = {
-		unit("E.T.C" , attack, faceMelt, true),
-		unit("Illidan", attack, theHunt, true),
-		unit("LiLi", attack, jugOfLife, true)
-	};
+    cout << "\n";
 
+    cout << "Team Diablo :" << "\n\n";
+    for (int i = 0; i < diablo.size(); i++) {
+        diablo[i]->displayStats();
+    }
 
-	// Enemies
-	vector<unit> enemies = {
-		unit("Johanna", attack, faceMelt, false),
-		unit("Valla", attack, puncturingArrow, false),
-		unit("Kharazim", attack, divinePalm, false)
-	};
+    cout << "\n";
 
+    cout << "Turn Order :" << "\n\n";
+    for (const auto& unit : turnOrder) {
+        cout << unit->getName() << " (Agility: " << unit->getAgi() << ")\n";
+    }
 
-	//Determine Turn Order
-	vector<unit> turnOrder;
-	turnOrder.insert(turnOrder.end(), allies.begin(), allies.end());
-	turnOrder.insert(turnOrder.end(), enemies.begin(), enemies.end());
+    cout << "\n\n";
+}
 
-	sort(turnOrder.begin(), turnOrder.end(), [](const unit& a, const unit& b) {
-		return a.getAgi() > b.getAgi();
-		});
-	
+void cycle(std::vector<unit*>& turnOrder, std::vector<unit*>& warcraft, std::vector<unit*>& diablo) {
+    srand(time(0));
+    int randomTarget = rand() % 3;
+    int actionSelection;
 
-	//Display Details
-	displayDetails(allies, enemies, turnOrder);
+    for (int i = 0; i < turnOrder.size(); i++) {
+        // Display Details
+        displayDetails(warcraft, diablo, turnOrder);
 
-	cout << "\n";
+        cout << "It is " << turnOrder[i]->getName() << " turn" << "\n\n";
+        if (turnOrder[i]->getAlliance() == false) {
+            cout << "Enemy is Deciding" << "\n";
+            Sleep(500);
+            if (turnOrder[i]->getCurrentMp() < turnOrder[i]->getSpellMpCost()) {
+                cout << "Enemy is Attacking" << "\n\n";
+                turnOrder[i]->doAttack(turnOrder[i], warcraft[randomTarget]);
+            }
+            else {
+                cout << "Enemy is Casting Spell" << "\n\n";
+                turnOrder[i]->castSpell(diablo, warcraft);
+            }
+        }
+        else {
+            turnOrder[i]->displayActions();
+            while (true) {
+                cin >> actionSelection;
+                switch (actionSelection) {
+                case 1:
+                    cout << "You want to attack" << "\n\n";
+                    turnOrder[i]->doAttack(turnOrder[i], diablo[randomTarget]);
+                    actionSelection = 0;
+                    break;
+                case 2:
+                    cout << "You are trying to cast your spell" << "\n\n";
+                    if (turnOrder[i]->getSpellMpCost() > turnOrder[i]->getCurrentMp()) {
+                        cout << "You do not have enough mana to cast your spell" << "\n";
+                        cout << "Select another option" << "\n\n";
+                        continue;
+                    }
+                    else {
+                        turnOrder[i]->castSpell(warcraft, diablo);
+                        actionSelection = 0;
+                        break;
+                    }
+                default:
+                    cout << "Invalid Input" << "\n\n";
+                    continue;
+                }
+                if (actionSelection == 0) {
+                    break;
+                }
+            }
+        }
+        system("pause");
+    }
+}
 
-	//One Turn
-	srand(time(0));
-	int randomTarget = rand() % 3;
-	int actionSelection;
+int main() {
+    // Initialize classes
+    action* attack = new basicAttack("Bash");
+    action* faceMelt = new skillMulti("Face Melt");
+    action* theHunt = new skillSingle("The Hunt");
+    action* jugOfLife = new skillHeal("The Jug of Life");
+    action* puncturingArrow = new skillSingle("Puncturing Arrow");
+    action* divinePalm = new skillHeal("Divine Palm");
 
-	for (int i = 0; i < turnOrder.size(); i++) {
-		cout << "It is " << turnOrder[i].getName() << " turn" << "\n\n";
+    unit* warcraft1 = new unit("E.T.C", attack, faceMelt, true);
+    unit* warcraft2 = new unit("Illidan", attack, theHunt, true);
+    unit* warcraft3 = new unit("LiLi", attack, jugOfLife, true);
 
-		if (turnOrder[i].getAlliance() == false) {
-			cout << "Enemy is Deciding" << "\n";
-			Sleep(500);
+    unit* diablo1 = new unit("Johanna", attack, faceMelt, false);
+    unit* diablo2 = new unit("Valla", attack, puncturingArrow, false);
+    unit* diablo3 = new unit("Kharazim", attack, divinePalm, false);
 
-			if (turnOrder[i].getCurrentMp() < turnOrder[i].getSpellMpCost()) {
-				cout << "Enemy is Attacking" << "\n";
-				turnOrder[i].doAttack(&turnOrder[i], &allies[randomTarget]);
-			}
-			else {
-				cout << "Enemy is Casting Spell" << "\n";
-				turnOrder[i].castSpell(&turnOrder[i], &enemies[randomTarget]);
-			}
-		}
-		else {
-			turnOrder[i].displayActions();
-			//system("pause");
-			while (true) {
-				cin >> actionSelection;
-				switch (actionSelection) {
-				case 1:
-					cout << "Attacking" << "\n";
-					turnOrder[i].doAttack(&turnOrder[i], &enemies[randomTarget]);
-					actionSelection = 0;
-					break;
-				case 2:
-					cout << "Casting Spell" << "\n";
-					turnOrder[i].castSpell(&turnOrder[i], &enemies[randomTarget]);
-					actionSelection = 0;
-					break;
-				default:
-					cout << "Invalid Input" << "\n";
-					continue;
-				}
-				if (actionSelection == 0) {
-					break;
-				}
-			}
-		}
-	}
+    // Warcraft team
+    vector<unit*> warcraft = {
+        warcraft1,
+        warcraft2,
+        warcraft3
+    };
 
-	cout << "Huhays" << "\n\n";
-	system("pause");
+    // Diablo team
+    vector<unit*> diablo = {
+        diablo1,
+        diablo2,
+        diablo3
+    };
+
+    // Determine Turn Order
+    vector<unit*> turnOrder = {
+        warcraft1,
+        warcraft2,
+        warcraft3,
+        diablo1,
+        diablo2,
+        diablo3
+    };
+
+    bubbleSort(turnOrder);
+
+    while (!warcraft.empty()) {
+        cycle(turnOrder, warcraft, diablo);
+    }
+
+    cout << "Game Over!" << "\n\n";
+    system("pause");
 }

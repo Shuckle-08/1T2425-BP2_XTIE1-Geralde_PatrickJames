@@ -1,4 +1,6 @@
 #include <iostream>
+#include <vector>
+
 
 using namespace std;
 
@@ -41,8 +43,9 @@ public:
 	void displayActions();
 
 	void doAttack(unit* attacker, unit* defender);
-	void castSpell(unit* attacker, unit* defender);
+	void castSpell(vector<unit*> allies, vector<unit*> enemies);
 	void takeDamage(int damageDealt);
 	void healHp(int healAmount);
+	void gainMP(int mpGained);
 };
 

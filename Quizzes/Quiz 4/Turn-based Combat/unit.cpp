@@ -21,10 +21,14 @@ void unit::randomizeStats()
 
 	this->maxHp = 100;
 	this->currentHp = this->maxHp;
-	this->pow = range(randomizer); cout << "pow " << this->pow << "\n";
-	this->vit = range(randomizer); cout << "vit " << this->vit << "\n";
-	this->agi = range(randomizer); cout << "agi " << this->agi << "\n";
-	this->dex = range(randomizer); cout << "dex " << this->dex << "\n";
+	this->pow = range(randomizer); 
+	this->vit = range(randomizer); 
+	this->agi = range(randomizer); 
+	this->dex = range(randomizer); 
+	//cout << "pow " << this->pow << "\n";
+	//cout << "vit " << this->vit << "\n";
+	//cout << "agi " << this->agi << "\n";
+	//cout << "dex " << this->dex << "\n";
 	this->maxMp = 50;
 	this->currentMp = 0;
 }
@@ -36,15 +40,14 @@ unit::unit(string nameInput, action* attackName, action* spellName, bool isAlly)
 	this->spell = spellName;
 	this->isAlly = isAlly;
 	
-
 	randomizeStats();
 
-	cout << this->name << " has entered the arena !!!" << "\n\n";
+	cout << this->name << " has entered the arena !!!" << "\n";
 }
 
 unit::~unit()
 {
-	//cout << this->name << " has died !!!" << "\n\n";
+	cout << this->name << " has died !!!" << "\n\n";
 }
 
 string unit::getName() const
@@ -123,22 +126,53 @@ void unit::doAttack(unit* attacker, unit* defender)
 	this->attack->performAction(attacker, defender);
 }
 
-void unit::castSpell(unit* attacker, unit* defender)
+void unit::castSpell(vector<unit*> allies, vector<unit*> enemies)
 {
+	srand(time(0));
+	int target = rand() % 3;
+
 	cout << this->name << " has cast his spell !!!" << "\n";
 	this->currentMp -= this->spell->getMpCost();
-	this->spell->performAction(attacker, defender);
+	
+	switch (spell->getSpellType()) {
+	case 1:
+		break;
+	case 2:
+		this->spell->performAction(this, allies[target]);
+		break;
+	case 3:
+		this->spell->performAction(this, enemies[0]);
+		this->spell->performAction(this, enemies[1]);
+		this->spell->performAction(this, enemies[2]);
+		break;
+	case 4:
+		this->spell->performAction(this, enemies[target]);
+		break;
+	}
 }
 
 void unit::takeDamage(int damageDealt)
 {
 	cout << this->name << " has taken " << damageDealt << " damage !!!" << "\n\n";
 	this->currentHp -= damageDealt;
+	if (this->currentHp <= 0) {
+		delete this;
+	}
 }
 
 void unit::healHp(int healAmount)
 {
 	cout << this->name << " has healed " << healAmount << " HP !!!" << "\n\n";
 	this->currentHp += healAmount;
+	if (this->currentHp > this->maxHp) {
+		cout << this->name << " has healed back to full HP !!!" << "\n\n";
+		this->currentHp = this->maxHp;
+	}
+}
+
+void unit::gainMP(int mpGained)
+{
+	cout << this->name << " has gained " << mpGained << " MP !!!" << "\n\n";
+	this->currentMp += mpGained;
 }
 

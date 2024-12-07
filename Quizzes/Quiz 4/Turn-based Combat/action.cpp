@@ -18,6 +18,11 @@ int action::getMpCost()
     return this->mpCost;
 }
 
+int action::getSpellType()
+{
+    return this->spellType;
+}
+
 void action::performAction(unit* attacker, unit* defender)
 {
     cout << "Executing Blank Action" << "\n";
